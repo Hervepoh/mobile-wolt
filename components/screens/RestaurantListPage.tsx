@@ -1,5 +1,5 @@
-// import { CategoryList } from '@/components/CategoryList';
-// import RestaurantList from '@/components/RestaurantList';
+import { CategoryList } from '@/components/CategoryList';
+import RestaurantList from '@/components/RestaurantList';
 import { Fonts } from '@/constants/theme';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated from 'react-native-reanimated';
@@ -13,10 +13,10 @@ const RestaurantListPage = () => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingTop: insets.top + HEADER_HEIGHT }}>
         <Text style={styles.pageTitle}>Restaurants</Text>
-        {/* <CategoryList /> */}
+        <CategoryList />
 
         <Text style={styles.allRestaurantsTitle}>All restaurants</Text>
-        {/* <RestaurantList /> */}
+        <RestaurantList />
       </Animated.ScrollView>
     </View>
   );
